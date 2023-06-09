@@ -5,11 +5,11 @@ import { Error404PageComponent } from './shared/pages/error404-page/error404-pag
 const routes: Routes = [
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth-routing.module').then(module => module.AuthRoutingModule)
+    loadChildren: () => import('./auth/auth-routing.module').then(module => module.AuthRoutingModule),
   },
   {
     path: 'heroes',
-    loadChildren: () => import('./heroes/heros-routing.module').then(module => module.HerosRoutingModule)
+    loadChildren: () => import('./heroes/heros-routing.module').then(module => module.HerosRoutingModule),
   },
   {
     path: '404', component: Error404PageComponent
